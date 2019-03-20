@@ -21,6 +21,7 @@ class Suggestion extends Component {
         onMouseEnter={ this.handleHover }
         onMouseLeave={ this.handleBlur }
         onMouseDown={ this.props.onSelect }
+        onTouchStart={ this.props.onSelect }
       >
         <SuggestionValue
           {...{ highlighting, searchWords, value }}
